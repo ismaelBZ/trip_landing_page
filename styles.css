@@ -11,55 +11,66 @@
     text-decoration: none;;
   }
 
+  
+  #header-img {
+    width: 70px;
+    height: 70px;
+  }  
+  
+  nav {
+    margin-left: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+  }
+  
+  .nav-link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-family: 'Futuristic', monospace;
+    color: #2b3b2b;
+  }
+  
+  .nav-link:hover {
+    font-weight: bold;
+    color: #2d4b2d;
+  }
+  
+  .nav-link:active {
+    font-weight: bold;
+  }
+  
 #container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-#header-img {
-  width: 70px;
-  height: 70px;
-}  
-
-nav {
-  margin-left: 5px;
-  margin-left: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  position: sticky;
-}
-
-.nav-link {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-decoration: none;
-  font-family: 'Futuristic', monospace;
-  color: #2b3b2b;
-}
-
-.nav-link:hover {
-  font-weight: bold;
-  color: #2d4b2d;
-}
-
-.nav-link:active {
-  font-weight: bold;
-}
-
-#logo {
-  padding-left: 20px;
-  padding-right: 50px;
-}
-
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
 #menu {
   padding-left: 50px;
   padding-right: 20px;
+}
+
+#logoText {
+  max-width: 144px;
+  /* margin-right: 20px;
+  margin-left: 80px; */
+}
+
+#logoText > h1 {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
+  font-size: 40px;
+  color: #142b14;
 }
 
 .menu-style {
@@ -72,28 +83,10 @@ nav {
   font-weight: bold;
 }
 
-#container {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
-}
 
-#logoText {
-  max-width: 144px;
-  margin-right: 20px;
-  margin-left: 80px;
-}
-
-#logoText > h1 {
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 600;
-  font-size: 40px;
-  color: #142b14;
-}
 
 .products {
-  margin: 0 15px;
-  max-width: 365px;
+  max-width: 400px;
   padding: 10px;
 }
 
@@ -119,6 +112,7 @@ nav {
 }
 
 form {
+  width: 260px;
   min-width: 200px;
   height: 150px;
   margin-right: 10px;
