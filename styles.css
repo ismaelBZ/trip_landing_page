@@ -11,6 +11,11 @@
     text-decoration: none;;
   }
 
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
 #header-img {
   width: 70px;
   height: 70px;
