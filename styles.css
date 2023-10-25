@@ -180,3 +180,31 @@ form {
   bottom: 0;
   background-color: aquamarine;
   }
+
+  @media only screen and (max-width: 860px) {
+    form {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 665px) {
+    nav {justify-content: space-between}
+    #home, #about, #contact {display: none}
+    #product1 {
+      display: none;
+    }
+  }
+
+   @media only screen and (max-width: 445px) {
+    nav {justify-content: space-between}
+    .nav-link {display: none}
+    #logoText {
+      position: abosolute;
+      top: -200px;
+      left: 50%;
+    }
+    #container {flex-direction: column}
+    #product1 {
+      display: none;
+    }
+  }
