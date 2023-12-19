@@ -4,189 +4,227 @@
   src: url(./assets/Fonts/futurist_fixed_width/FUTRFW.TTF);
 }
 
-
 * {
     margin: 0;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     padding: 0;
-    text-decoration: none;;
-  }
-  
-nav {
-    margin-left: 5px;
-    margin-left: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    }  
-  
-  #header-img {
-    width: 70px;
-    height: 70px;
-  }  
-    
-  .nav-link {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Futuristic', monospace;
-    color: #2b3b2b;
-  }
-  
-  .nav-link:hover {
-    font-weight: bold;
-    color: #2d4b2d;
-  }
-  
-  .nav-link:active {
-    font-weight: bold;
-  }
-  
-  #menu {
-    padding-left: 50px;
-    padding-right: 20px;
-  }
-  
-  .menu-style {
-    cursor: pointer;
-    font-size: 24px;
-    color: #2b3b2b;
-  }
-  
-  .menu-style:hover {
-    font-weight: bold;
-  }
+}
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
 
-#container {
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+.horizontal-padding {
+  padding-left: 5vw;
+  padding-right: 8vw;
+}
+
+/* HEADER */
+
+.nav-bar {
+  position: sticky;
+  height: 10vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+}  
+  
+.logo-img {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-height: 8vh;
+}  
+    
+.nav-link {
+  display: none;
+  padding: 20px 15px;
+  font-family: 'Futuristic', monospace;
+  color: #2b3b2b;
+}
+
+#jungles {
+  display: block;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: #2d4b2d;
 }
   
-  #logoText {
-    margin-right: 20px;
-    max-width: 144px;
-    /* margin-right: 20px;
-  margin-left: 80px; */
+.nav-link:active {
+  font-weight: bold;
+}
+
+.menu-style {
+  cursor: pointer;
+  font-size: 24px;
+  color: #2b3b2b;
   }
+  
+.menu-style:hover {
+  font-weight: bold;
+}
 
-    #logoText > h1 {
-      font-family: 'Source Code Pro', monospace;
-      font-weight: 600;
-      font-size: 40px;
-      color: #142b14; 
-    }
+/* HIGHTLIGHTED */
 
-  .products {
-    max-width: 400px;
-    padding: 10px;
-  }
+.highlighted-trips {
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+} 
+  
+ /* logo */
 
-  .products:hover {
-    border: 1px solid #708570;
-  }
+.logo-wrapper {
+  max-width: 20vw;
+}
 
-    .productTitle {
-  margin-bottom: 10px;
+.logo-text {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #142b14;
+}
+
+/* trips */
+
+.products {
+  max-width: 50vw;
+  padding-top: 1.5vh;
+}
+
+.productTitle {
   font-family: 'Futuristic', monospace;
   font-size: 16px;
   letter-spacing: -3px;
   color: #142b14;
-    }
+}
     
-    .description {
-      text-align: justify;
-      color: #708570;
-    }
+.description {
+  margin-top: 1.5vh;
+  text-align: justify;
+  color: #708570;
+}
 
-  #product1 {
-    margin-right: 20px;
+#product2 {
+  display: none;
 }
 
 form {
-  width: 260px;
-  min-width: 200px;
-  height: 150px;
-  margin-right: 10px;
-  padding-left: 20px;
-  padding-top: 10px;
+  display: none;
 }
 
-  #form-header {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 16px;
-  font-weight: 500;
-  }
-
-  #email {
-  width: 90%;
-  margin-top: 15px;
-  background-color:#c7ddc7;
-  border: 1px solid #708570;
-  line-height: 22px;
-  font-family: monospace;
-  font-size: 14px;
-  color: #2d4b2d;
-  }
-
-  #submit {
-  margin-top: 15px;
-  padding: 5px;
-  border: 1px solid #708570;
-  border-radius: 3px;
-  background-color: #4e804e;
-  font-family: 'Futuristic', monospace;
-  font-size: 11px;
-  letter-spacing: -2px;
-  color: #c9e7c9;
-  }
-
-  #submit:hover {
-  background-color: #649c64;
-  color: #c3dbc3;
-  }
-
-  #submit:active {
-  transform: scale(0.95);
-  }
-
-  #video-container {
-  margin: 0 auto;
-  position: relative;
+/* VIDEO */
+    
+#video {
+  width: 100vw;
+  height: 55vh;
 }
 
-  #video {
-  position: absolute;
-  width: 100%;
-  height: 61vh;
-  }
-
-  #container-videoText {
+#container-videoText {
   display: relative;
-  }
+}
 
-  #videoTexBackground {
+#videoTexBackground {
   width: 100% ;
   height: 80px;
   position: absolute;
   bottom: 0;
   background-color: aquamarine;
+}
+
+
+  @media only screen and (min-width: 450px) {
+    
+    .horizontal-padding {
+      padding-left: 3vw;
+      padding-right: 4vw;
+    }
+    .nav-bar {
+      height: 15vh;
+    }
+    #logo-img {
+      max-height: 10vh;
+    }
+    .highlighted-trips {
+      justify-content: normal;
+      gap: 2.5vw;
+    }
+    #logo-text {
+      font-size: 2.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-content: flex-end;
+      height: 150px;
+      min-width: 175px;
+      padding-top: 1.5vw;
+      flex-wrap:  wrap;
+    }
+    
+    .form-header {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    
+    #email {
+      width: 90%;
+      /* margin-top: 1.5vh; */
+      background-color:#c7ddc7;
+      border: 1px solid #708570;
+      line-height: 3.5vh;
+      font-family: monospace;
+      font-size: 0.925rem;
+      color: #2d4b2d;
+    }
+    
+    #submit {
+      /* margin-top: 1.5vh; */
+      padding: 5px;
+      border: 1px solid #708570;
+      border-radius: 3px;
+      background-color: #4e804e;
+      font-family: 'Futuristic', monospace;
+      font-size: 0.7875rem;
+      letter-spacing: -0.125rem;
+      color: #c9e7c9;
+    }
+    
+    #submit:hover {
+      background-color: #649c64;
+      color: #c3dbc3;
+    }
+    
+    #submit:active {
+      transform: scale(0.95);
+    }
+    
   }
 
-  @media only screen and (max-width: 860px) {
-    form {
-      display: none;
+  @media only screen and (min-width: 768px) {
+    
+    .nav-link {
+      display: block;
+    }
+    #product2 {
+      display: block;
     }
   }
-
+/* 
   @media only screen and (max-width: 665px) {
     nav {justify-content: space-between}
     #home, #about, #contact {display: none}
@@ -198,8 +236,9 @@ form {
    @media only screen and (max-width: 445px) {
     nav {justify-content: space-between}
     .nav-link {display: none}
-    #logoText {
+    .logo-wrapper {
       position: abosolute;
+      /* width: 80vw;
       top: -200px;
       left: 50%;
     }
@@ -207,4 +246,4 @@ form {
     #product1 {
       display: none;
     }
-  }
+  } */
