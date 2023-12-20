@@ -35,40 +35,30 @@ body {
   justify-content: space-between;
   align-items: center;
 }  
-  
 .logo-img {
   display: block;
   width: auto;
   height: 100%;
   max-height: 8vh;
 }  
-    
 .nav-link {
   display: none;
   padding: 20px 15px;
   font-family: 'Futuristic', monospace;
   color: #2b3b2b;
 }
-
-#jungles {
-  display: block;
-}
-
 .nav-link:hover {
   font-weight: bold;
   color: #2d4b2d;
 }
-  
 .nav-link:active {
   font-weight: bold;
 }
-
 .menu-style {
   cursor: pointer;
   font-size: 24px;
   color: #2b3b2b;
   }
-  
 .menu-style:hover {
   font-weight: bold;
 }
@@ -82,59 +72,52 @@ body {
   align-items: flex-start;
   justify-content: space-between;
 } 
-  
- /* logo */
 
+ /* logo */
 .logo-wrapper {
   max-width: 20vw;
 }
-
 .logo-text {
   font-family: 'Source Code Pro', monospace;
   font-weight: 600;
   font-size: 1.7rem;
+  line-height: 0.9;
   color: #142b14;
 }
 
 /* trips */
-
 .products {
   max-width: 50vw;
-  padding-top: 1.5vh;
 }
-
 .productTitle {
   font-family: 'Futuristic', monospace;
   font-size: 16px;
   letter-spacing: -3px;
   color: #142b14;
 }
-    
 .description {
   margin-top: 1.5vh;
   text-align: justify;
   color: #708570;
 }
-
 #product2 {
   display: none;
 }
 
+ /* form */
 form {
   display: none;
 }
 
 /* VIDEO */
     
-#video {
+.video {
   width: 100vw;
   height: 55vh;
 }
-
 #container-videoText {
   display: relative;
 }
-
 #videoTexBackground {
   width: 100% ;
   height: 80px;
@@ -143,107 +126,118 @@ form {
   background-color: aquamarine;
 }
 
+/** MEDIAS **/
 
-  @media only screen and (min-width: 450px) {
-    
-    .horizontal-padding {
-      padding-left: 3vw;
-      padding-right: 4vw;
-    }
-    .nav-bar {
-      height: 15vh;
-    }
-    #logo-img {
-      max-height: 10vh;
-    }
-    .highlighted-trips {
-      justify-content: normal;
-      gap: 2.5vw;
-    }
-    #logo-text {
-      font-size: 2.5rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-content: flex-end;
-      height: 150px;
-      min-width: 175px;
-      padding-top: 1.5vw;
-      flex-wrap:  wrap;
-    }
-    
-    .form-header {
-      font-family: 'Source Code Pro', monospace;
-      font-size: 1rem;
-      font-weight: 500;
-    }
-    
-    #email {
-      width: 90%;
-      /* margin-top: 1.5vh; */
-      background-color:#c7ddc7;
-      border: 1px solid #708570;
-      line-height: 3.5vh;
-      font-family: monospace;
-      font-size: 0.925rem;
-      color: #2d4b2d;
-    }
-    
-    #submit {
-      /* margin-top: 1.5vh; */
-      padding: 5px;
-      border: 1px solid #708570;
-      border-radius: 3px;
-      background-color: #4e804e;
-      font-family: 'Futuristic', monospace;
-      font-size: 0.7875rem;
-      letter-spacing: -0.125rem;
-      color: #c9e7c9;
-    }
-    
-    #submit:hover {
-      background-color: #649c64;
-      color: #c3dbc3;
-    }
-    
-    #submit:active {
-      transform: scale(0.95);
-    }
-    
+/* 425PX */
+@media only screen and (min-width: 425px) {
+  
+  /* HEADER */
+  .nav-bar {
+    height: 15vh;
+  }
+  #logo-img {
+    max-height: 10vh;
+  }
+  #jungles {
+    display: block;
   }
 
-  @media only screen and (min-width: 768px) {
-    
-    .nav-link {
-      display: block;
-    }
-    #product2 {
-      display: block;
-    }
+  /* HIGHTLIGHTED */
+  .highlighted-trips {
+    justify-content: space-between;
+    gap: 6.5vw;
   }
-/* 
-  @media only screen and (max-width: 665px) {
-    nav {justify-content: space-between}
-    #home, #about, #contact {display: none}
-    #product1 {
-      display: none;
-    }
+  #logo-text {
+    font-size: 2.5rem;
+  }
+  
+}
+
+
+/* 540PX */
+@media only screen and (min-width: 540px) {
+  
+  .horizontal-padding{
+    padding-left: 3vw;
+    padding-right: 4vw;
   }
 
-   @media only screen and (max-width: 445px) {
-    nav {justify-content: space-between}
-    .nav-link {display: none}
-    .logo-wrapper {
-      position: abosolute;
-      /* width: 80vw;
-      top: -200px;
-      left: 50%;
-    }
-    #container {flex-direction: column}
-    #product1 {
-      display: none;
-    }
-  } */
+  /* HIGHLIGHTED */
+
+  .highlighted-trips {
+    gap: 3vw;
+  }
+  .logo-wrapper{
+    max-width: none;
+  }
+
+  /* form */
+  form {
+    display: flex;
+    flex-direction: column;
+    min-width: 25vw;
+    gap: 2.3vh;
+  }
+  .form-header {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  #email {
+    width: 100%;
+    background-color:#c7ddc7;
+    border: 1px solid #708570;
+    line-height: 3.5vh;
+    font-family: monospace;
+    font-size: 0.925rem;
+    color: #2d4b2d;
+  }
+  #submit {
+    padding: 5px;
+    border: 1px solid #708570;
+    border-radius: 3px;
+    background-color: #4e804e;
+    font-family: 'Futuristic', monospace;
+    font-size: 0.7875rem;
+    letter-spacing: -0.125rem;
+    color: #c9e7c9;
+  }
+  #submit:hover {
+    background-color: #649c64;
+    color: #c3dbc3;
+  }
+  #submit:active {
+    transform: scale(0.95);
+  }
+}
+
+/* 680px */
+@media only screen and (min-width: 680px) {
+  
+  .horizontal-padding{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  /* HEADER */
+  .nav-link {
+    display: block;
+  }
+
+  /* HIGHLIGHTED */
+  .highlighted-trips {
+    gap: 2vw;
+  }
+  .products{
+    max-width: 30vw;
+  }
+  #product2 {
+    display: block;
+  }
+  
+  /* form */
+  form {
+    min-width: 15vw;
+  }
+  
+}
